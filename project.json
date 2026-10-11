@@ -5,5 +5,7 @@
   "runtime": "browser",
   "build": "none",
   "dependencies": [],
-  "deployment": "GitHub Pages, main branch, repository root"
+  "deployment": "GitHub Pages, main branch, repository root",
+  "canonical_url": "https://kaizenxryu.github.io/",
+  "source": "https://github.com/KaizenxRyu/KaizenxRyu.github.io"
 }

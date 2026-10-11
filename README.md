@@ -1,19 +1,23 @@
 # Rahul Chamoli | Kaizen-Ryu
 
-A personal portfolio for AI engineering, Azure automation and product development. Static HTML and CSS, with no package dependencies or build step.
+Personal portfolio: https://kaizenxryu.github.io/
 
-## Run and deploy
+AI engineering, cloud consulting and product development. Static HTML, CSS and a small dependency-free script for project filtering and copying the enquiry email.
 
-Open index.html locally, or publish the repository root through GitHub Pages on the main branch. Assets are stored in assets/. No tracking, cookies, contact-form backend or API keys are included. Contact links open LinkedIn.
+## Run and publish
+
+Serve this repository root with any static HTTP server. GitHub Pages publishes main at the repository root. There is no build step, package installation or paid hosting. Assets are local in assets/.
 
 ## Content
 
-Kaizen-Ryu is presented as ongoing work, not a finished public product. Future case studies should include permissions, a reproducible demo and measured results before publication.
+index.html contains the introduction, services, twelve project entries, project notes, working process, certification background and contact desk. Professional work is shown through anonymized capability summaries drawn from the Kaizen dashboard, with related projects grouped. Kaizen-Ryu is ongoing development, with no public demo claim. The website source is linked separately.
 
-## Recovery
+Descriptions were prepared from local project overviews inspected on 11 October 2026. No private code or documents were copied to the website; source projects were not changed or retested for this presentation. Do not add private project details, client names, savings claims, certification validity or measured results without evidence and publication authority.
 
-Revert the source commit and redeploy main. The Git repository stores all files required to reconstruct the site. Local research and release screenshots remain outside the repository.
+## Contact
 
-## Motion
+Portfolio enquiries use rahulchamoli.in+hello@gmail.com. The direct address is rahulchamoli.in@gmail.com. Email links open the visitor's email app; this site does not submit or store messages. The plus tag routes to the same Gmail inbox. A Gmail filter is separate from the website and must be configured in Gmail.
 
-assets/kaizenxryu-motion.svg is a self-contained code-authored illustration. Its welcome motion and the portrait orbit settle after 4.8 seconds; reduced-motion preferences disable them. Edit the SVG or styles.css directly. The real portrait remains still.
+## Maintain and recover
+
+Edit index.html for content, styles.css for appearance and portfolio.js for interactions. Keep keyboard access, reduced-motion behavior and a usable page without JavaScript. No tracking, external fonts, secrets or third-party packages are included. Revert a release commit and let Pages redeploy to roll back. Git history preserves the site. Local research, screenshots and task records stay outside this public repository.
