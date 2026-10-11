@@ -1,21 +1,25 @@
-# Status
+# Portfolio status
 
 11 October 2026. Owner: Codex.
 
-Portfolio implemented and published to https://kaizenrc.github.io/ from the main branch of kaizenrc/kaizenrc.github.io. GitHub Pages reported the build successful for source 6bb9d821a8b433b7f22a632e5724ab2389667979. The live page was opened and inspected in the browser.
+## Current hosting
 
-Checks: local desktop review; images loaded; no broken navigation anchors; no horizontal overflow at desktop and 390px; work navigation click; no em dashes in site copy. No package dependencies, third-party tracking or secret-bearing code. This static presentation does not claim to complete every Kaizen product requirement.
+The personal repository KaizenxRyu/KaizenxRyu.github.io owns the portfolio at https://kaizenxryu.github.io/. GitHub Pages publishes main at the root with HTTPS. The initial personal deployment was opened and all image assets loaded. GitHub profile and LinkedIn contact website links now use the personal address. The previous kaizenrc.github.io repository preserves its original history and has a static redirect release prepared and pushed.
 
-Rahul confirmed rchamoli as the primary public GitHub identity. The portfolio remains hosted under kaizenrc.github.io, and its GitHub links now point to rchamoli (source 2d397a3d924380ec35ab46cc969c36d8e595a25a). Browser sign-in enabled the primary profile name, bio and website changes; the profile README was published through PR #2 in rchamoli/rchamoli. LinkedIn links to the primary GitHub account and this portfolio.
+## Current content
 
-Next owner: Rahul reviews the presentation and supplies publishable project case studies with screenshots, demos and measured outcomes.
+Twelve anonymized actual-work entries: Kaizen-Ryu, identity operations, AI usage governance, packaging automation, virtual desktops, cost reporting, service reporting, directory discovery, enterprise AI assistance, agent integration, authentication diagnostics, and data security/Copilot readiness. Rejected public sample repositories are excluded. No customer names, internal endpoints, private source or outcome metrics are published.
 
-## Identity and motion refresh, 11 October 2026
+The refresh includes category filters, expandable project notes, per-project language or delivery labels, distinct concept illustrations, four expertise areas, a Microsoft certification background section, and a contact desk. Decorative motion has a pause control, system reduced-motion support and on-screen flow animation. The dark banner shows a developer at multiple screens overlooking Himalayan mountains and the Ganga. Portfolio enquiries use rahulchamoli.in+hello@gmail.com; direct contact is rahulchamoli.in@gmail.com. A Gmail filter has not been configured by this website.
 
-Rahul renamed his personal account to KaizenxRyu and chose Rahul Chamoli as display name. Portfolio GitHub links now use that handle. A self-contained SVG adds a navy/gold circuit illustration with a 4.8-second welcome animation that settles; the portrait orbit also settles. Both respect prefers-reduced-motion. No scripts, tracking, external fonts or new dependencies were added.
+## Validation and limits
 
-Validation: SVG parses as XML; desktop assets loaded and no horizontal overflow; 390px layout has no horizontal overflow and all images loaded; no old GitHub links or em dashes. In browser SVG preview, the ring computed transform was non-identity just after reload and identity after settling, with animation-name orbit and duration 4.8s. Deployment verified: GitHub Pages reported built with no error for 5209d98c42c7ede8ded0d3de9d02750ce57910e3. The public browser loaded the SVG and showed both GitHub links using KaizenxRyu, with no horizontal overflow.
+Source checks passed for 12 entries, unique IDs, anchor targets, local asset files, no em dashes, no rejected example repositories, no customer names/internal endpoint domains, tagged and direct email links, and the canonical personal URL.
 
-Recovery: revert this refresh commit, push main, and verify the previous GitHub Pages build. Animated SVG is local and can be replaced by the existing static banner.
+Browser preview: all images loaded, no horizontal overflow at the observed desktop viewport, Security filter showed four matching projects and updated its pressed state, All projects restored twelve, project notes expanded, and Copy email reported success. Mail links contain the encoded plus tag. The desktop page was visually reviewed. Source-project tests were not rerun; no claim about their current production readiness is made.
 
-Sources checked 2026-10-11: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion ; https://docs.github.com/en/account-and-profile/reference/profile-reference .
+A requested 390px browser viewport override did not take effect: observed innerWidth remained 1407. Mobile CSS is present, but this release's actual mobile browser check is not completed. Record this limitation instead of claiming a mobile pass. The old-site redirect was verified in the browser. Final live release receipts are retained in the private release record outside this repository.
+
+## Deployment and recovery
+
+No build or package installation: publish main from the root. Site dependencies: none. No Terraform resources or paid infrastructure are provisioned for this static GitHub Pages site. Git history is the reproducible source backup; portrait and graphics are local assets. Roll back by reverting the refresh commit and allowing Pages to deploy, then inspect the live site. Revert the old-site redirect commit if the personal site needs recovery. Keep private screenshots and editorial mappings outside the public repository.
