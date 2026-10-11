@@ -1,0 +1,9 @@
+{
+  "name": "Rahul Chamoli | Kaizen-Ryu Portfolio",
+  "owner": "Rahul Chamoli",
+  "type": "static-website",
+  "runtime": "browser",
+  "build": "none",
+  "dependencies": [],
+  "deployment": "GitHub Pages, main branch, repository root"
+}
