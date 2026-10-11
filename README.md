@@ -2,7 +2,7 @@
 
 Personal portfolio: https://kaizenxryu.github.io/
 
-AI engineering, cloud consulting and product development. Static HTML, CSS and a small dependency-free script for project filtering and copying the enquiry email.
+AI engineering, cloud consulting and product development. Static HTML, CSS and a dependency-free script for project filtering, copying the enquiry email and optional motion.
 
 ## Run and publish
 
@@ -20,4 +20,6 @@ Portfolio enquiries use rahulchamoli.in+hello@gmail.com. The direct address is r
 
 ## Maintain and recover
 
-Edit index.html for content, styles.css for appearance and portfolio.js for interactions. Keep keyboard access, reduced-motion behavior and a usable page without JavaScript. No tracking, external fonts, secrets or third-party packages are included. Revert a release commit and let Pages redeploy to roll back. Git history preserves the site. Local research, screenshots and task records stay outside this public repository.
+Edit index.html for content, styles.css for appearance and portfolio.js for interactions. The motion control pauses decorative animation. System reduced-motion preferences disable it. IntersectionObserver limits flow animation to visible project illustrations. The charcoal banner depicts a developer overlooking the Himalayas and Ganga; the genuine portrait remains separate. Project illustrations are concepts, not live telemetry.
+
+Keep keyboard access and a usable page without JavaScript. No tracking, external fonts, secrets or third-party packages are included. Revert a release commit and let Pages redeploy to roll back. Git history preserves the site. Local research, screenshots and task records stay outside this public repository.

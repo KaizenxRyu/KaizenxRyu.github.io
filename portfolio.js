@@ -25,3 +25,30 @@ document.getElementById("copy-email").addEventListener("click", async () => {
     status.textContent = "Copy was unavailable. Select the email address above, or use the email link.";
   }
 });
+
+const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+const motionToggle = document.getElementById("motion-toggle");
+function updateMotionSystem() {
+  document.body.classList.toggle("motion-paused", motionPreference.matches);
+  motionToggle.setAttribute("aria-pressed", String(!motionPreference.matches));
+  motionToggle.querySelector(".motion-label").textContent = motionPreference.matches ? "Reduced motion" : "Motion on";
+  motionToggle.disabled = motionPreference.matches;
+}
+updateMotionSystem();
+motionPreference.addEventListener("change", updateMotionSystem);
+motionToggle.addEventListener("click", () => {
+  const paused = document.body.classList.toggle("motion-paused");
+  motionToggle.setAttribute("aria-pressed", String(!paused));
+  motionToggle.querySelector(".motion-label").textContent = paused ? "Motion off" : "Motion on";
+});
+if ("IntersectionObserver" in window) {
+  const animatedSections = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("in-view", entry.isIntersecting);
+      if (entry.isIntersecting && !entry.target.classList.contains("reveal-arrived")) {
+        entry.target.classList.add("reveal-arrived");
+      }
+    });
+  }, {threshold: 0.08});
+  document.querySelectorAll(".project-card, .section-top, .work-heading, .projects-heading, .contact-inner").forEach(node => animatedSections.observe(node));
+}
