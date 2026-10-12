@@ -15,6 +15,11 @@ filters.forEach(button => button.addEventListener("click", () => {
     filter.setAttribute("aria-pressed", String(selected));
   });
   count.textContent = `${visible} ${visible === 1 ? "project" : "projects"}`;
+  const more = document.getElementById("more-work");
+  const extraCount = more.querySelectorAll("[data-category]:not([hidden])").length;
+  more.hidden = extraCount === 0;
+  more.querySelector("summary b").textContent = String(extraCount);
+  if (category !== "all") more.open = true;
 }));
 document.getElementById("copy-email").addEventListener("click", async () => {
   const status = document.getElementById("copy-status");
@@ -50,5 +55,30 @@ if ("IntersectionObserver" in window) {
       }
     });
   }, {threshold: 0.08});
-  document.querySelectorAll(".project-card, .section-top, .work-heading, .projects-heading, .contact-inner").forEach(node => animatedSections.observe(node));
+  document.querySelectorAll(".project-card, .section-top, .capabilities, .projects-heading, .identity-section").forEach(node => animatedSections.observe(node));
 }
+
+// Create a draft link only. The visitor reviews and sends it from their email app.
+const briefForm = document.getElementById("brief-form");
+const draftResult = document.getElementById("draft-result");
+briefForm.addEventListener("input", () => { draftResult.hidden = true; });
+briefForm.addEventListener("submit", event => {
+  event.preventDefault();
+  if (!briefForm.reportValidity()) return;
+  const fields = new FormData(briefForm);
+  const name = String(fields.get("name")).trim();
+  const email = String(fields.get("email")).trim();
+  const type = String(fields.get("type"));
+  const message = String(fields.get("message")).trim();
+  if (!name || message.length < 10) {
+    document.getElementById("draft-status").textContent = "Add your name and a brief of at least 10 characters.";
+    draftResult.hidden = false;
+    document.getElementById("draft-link").hidden = true;
+    return;
+  }
+  const body = `Hi Rahul,\n\nI'd like help with: ${type}\n\n${message}\n\nFrom: ${name}\nReply to: ${email}`;
+  document.getElementById("draft-link").href = `mailto:rahulchamoli.in%2Bhello@gmail.com?subject=${encodeURIComponent("Portfolio enquiry: " + type)}&body=${encodeURIComponent(body)}`;
+  document.getElementById("draft-link").hidden = false;
+  document.getElementById("draft-status").textContent = "Your draft is ready. Review it in your email app before sending.";
+  draftResult.hidden = false;
+});

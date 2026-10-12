@@ -10,13 +10,13 @@ Serve this repository root with any static HTTP server. GitHub Pages publishes m
 
 ## Content
 
-index.html contains the introduction, services, twelve project entries, project notes, working process, certification background and contact desk. Professional work is shown through anonymized capability summaries drawn from the Kaizen dashboard, with related projects grouped. Kaizen-Ryu is ongoing development, with no public demo claim. The website source is linked separately.
+index.html is a single-page portfolio: introduction and portrait, professional experience, connected capabilities, three alternating featured project stories, nine additional projects, the Kaizen-Ryu identity, certification background and contact. Expand More project work to explore the additional entries; category filters open that collection when needed. Professional work is shown through anonymized capability summaries drawn from the Kaizen dashboard, with related projects grouped. Kaizen-Ryu is ongoing development, with no public demo claim. The website source is linked separately.
 
 Descriptions were prepared from local project overviews inspected on 11 October 2026. No private code or documents were copied to the website; source projects were not changed or retested for this presentation. Do not add private project details, client names, savings claims, certification validity or measured results without evidence and publication authority.
 
 ## Contact
 
-Portfolio enquiries use rahulchamoli.in+hello@gmail.com. The direct address is rahulchamoli.in@gmail.com. Email links open the visitor's email app; this site does not submit or store messages. The plus tag routes to the same Gmail inbox. A Gmail filter is separate from the website and must be configured in Gmail.
+Portfolio enquiries use rahulchamoli.in+hello@gmail.com. The direct address is rahulchamoli.in@gmail.com. The brief form validates the visitor's input and prepares an encoded email link. The visitor reviews and sends it from their own email app; this site does not submit or store messages. Editing a field clears the prepared draft. Email-app configuration is required, and direct/copy contact options remain available. The plus tag routes to the same Gmail inbox. A Gmail filter is separate from the website and must be configured in Gmail.
 
 ## Maintain and recover
 
