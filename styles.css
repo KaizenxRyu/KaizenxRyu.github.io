@@ -101,8 +101,8 @@ body.page-hidden *,body.page-hidden *:before,body.page-hidden *:after{animation-
 .studio-art{align-self:end;min-width:0;margin-right:-55px;overflow:visible}.studio-art svg{width:100%;height:auto}
 .studio-screens text{fill:#b3d0f8;font:8px var(--mono);letter-spacing:.8px}
 .studio-water,.screen-data{animation:flow 13s linear infinite;animation-play-state:paused}
-.identity-section.in-view .studio-water,.identity-section.in-view .screen-data{animation-play-state:running}
-.studio-sky{animation:studio-shimmer 9s ease-in-out infinite alternate;animation-play-state:paused}.identity-section.in-view .studio-sky{animation-play-state:running}
+.project-card.in-view .studio-water,.project-card.in-view .screen-data{animation-play-state:running}
+.studio-sky{animation:studio-shimmer 9s ease-in-out infinite alternate;animation-play-state:paused}.project-card.in-view .studio-sky{animation-play-state:running}
 @keyframes studio-shimmer{from{opacity:.4}to{opacity:1}}
 @media(max-width:1000px){.identity-section{gap:20px}.studio-art{margin-right:-24px}}
 @media(max-width:700px){.identity-section{grid-template-columns:1fr;gap:0;padding-block:48px 0}.identity-copy{padding-bottom:15px}.studio-art{margin-inline:-18px;max-width:calc(100% + 36px)}.identity-copy>p:not(.eyebrow){max-width:450px}}
@@ -132,3 +132,5 @@ body.page-hidden *,body.page-hidden *:before,body.page-hidden *:after{animation-
 .studio-art{mask-image:none;margin-right:-30px}
 @media(max-width:700px){.studio-art{margin-inline:-12px;max-width:calc(100% + 24px)}}
 @media(max-width:700px){html{scroll-padding-top:140px}}
+
+.featured-case .studio-visual{padding:0;background:#dbe8f6}.featured-case .studio-visual{aspect-ratio:860/560}.card-visual.studio-visual svg{display:block;position:absolute;inset:0;width:100%;height:100%;max-height:none}

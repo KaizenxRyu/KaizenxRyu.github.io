@@ -10,7 +10,7 @@ Serve this repository root with any static HTTP server. GitHub Pages publishes m
 
 ## Content
 
-index.html is a single-page portfolio: introduction and portrait, professional experience, connected capabilities, three alternating featured project stories, nine additional projects, the Kaizen-Ryu identity, certification background and contact. Expand More project work to explore the additional entries; category filters open that collection when needed. Professional work is shown through anonymized capability summaries drawn from the Kaizen dashboard, with related projects grouped. Kaizen-Ryu is ongoing development, with no public demo claim. The website source is linked separately.
+index.html is a single-page portfolio: introduction and portrait, professional experience, connected capabilities, three alternating featured project stories, nine additional projects, certification background and contact. Expand More project work to explore the additional entries; category filters open that collection when needed. Professional work is shown through anonymized capability summaries drawn from the Kaizen dashboard, with related projects grouped. Kaizen-Ryu is ongoing development, with no public demo claim. The website source is linked separately.
 
 Descriptions were prepared from local project overviews inspected on 11 October 2026. No private code or documents were copied to the website; source projects were not changed or retested for this presentation. Do not add private project details, client names, savings claims, certification validity or measured results without evidence and publication authority.
 
@@ -20,7 +20,7 @@ Portfolio enquiries use rahulchamoli.in+hello@gmail.com. The direct address is r
 
 ## Maintain and recover
 
-Edit index.html for content, styles.css for appearance and portfolio.js for interactions. The motion control pauses decorative animation. System reduced-motion preferences disable it. IntersectionObserver limits flow animation to visible project illustrations. Section 03 integrates the Kaizen-Ryu introduction into an original illustrated studio: a developer at three screens overlooking mountains and a river. It has its own web design instead of a framed social banner. The approved social banner remains the sharing-preview asset; the genuine portrait stays in the introduction. Project illustrations are concepts, not live telemetry.
+Edit index.html for content, styles.css for appearance and portfolio.js for interactions. The motion control pauses decorative animation. System reduced-motion preferences disable it. IntersectionObserver limits flow animation to visible project illustrations. The Kaizen-Ryu project card uses an original illustrated studio: a developer at three screens overlooking mountains and a river. The sharing preview is assets/social-preview.jpg, a 1200x630 crop of the Himalaya artwork; the genuine portrait stays in the introduction. Project illustrations are concepts, not live telemetry.
 
 The white, black and blue presentation includes an original inline SVG mountain/river landscape, slow CSS scenery motion, connected diagrams, section arrivals and a reading-progress line. Scenery pauses outside the viewport; CSS motion pauses when the page is hidden. Scroll progress is event-driven, not a continuous JavaScript animation loop. GitHub Pages serves the HTML/CSS/JavaScript; animation runs in the visitor's browser and needs no paid hosting.
 
