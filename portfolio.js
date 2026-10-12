@@ -50,17 +50,39 @@ if ("IntersectionObserver" in window) {
   const animatedSections = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       entry.target.classList.toggle("in-view", entry.isIntersecting);
-      if (entry.isIntersecting && !entry.target.classList.contains("reveal-arrived")) {
+      if (entry.isIntersecting && !entry.target.classList.contains("hero") && !entry.target.classList.contains("reveal-arrived")) {
         entry.target.classList.add("reveal-arrived");
       }
     });
   }, {threshold: 0.08});
-  document.querySelectorAll(".project-card, .section-top, .capabilities, .projects-heading, .identity-section").forEach(node => animatedSections.observe(node));
+  document.querySelectorAll(".hero, .about, .project-card, .section-top, .capabilities, .projects-heading, .identity-section, .credentials, .contact").forEach(node => animatedSections.observe(node));
 }
+
+// CSS handles ambient animation. Only update reading progress after a scroll.
+const progressLine = document.querySelector(".reading-progress span");
+let progressFrame = 0;
+function updateProgress() {
+  progressFrame = 0;
+  const range = document.documentElement.scrollHeight - window.innerHeight;
+  const fraction = range > 0 ? Math.min(1, Math.max(0, window.scrollY / range)) : 0;
+  progressLine.style.transform = `scaleX(${fraction})`;
+}
+function queueProgress() {
+  if (!progressFrame) progressFrame = requestAnimationFrame(updateProgress);
+}
+window.addEventListener("scroll", queueProgress, {passive: true});
+window.addEventListener("resize", queueProgress);
+window.addEventListener("load", queueProgress);
+document.querySelectorAll("details").forEach(detail => detail.addEventListener("toggle", queueProgress));
+document.addEventListener("visibilitychange", () => {
+  document.body.classList.toggle("page-hidden", document.hidden);
+});
+queueProgress();
 
 // Create a draft link only. The visitor reviews and sends it from their email app.
 const briefForm = document.getElementById("brief-form");
 const draftResult = document.getElementById("draft-result");
+briefForm.hidden = false;
 briefForm.addEventListener("input", () => { draftResult.hidden = true; });
 briefForm.addEventListener("submit", event => {
   event.preventDefault();
