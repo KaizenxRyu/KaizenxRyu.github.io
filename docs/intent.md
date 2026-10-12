@@ -11,4 +11,6 @@ Professional project descriptions are anonymized functional summaries drawn from
 
 The site uses local assets, static HTML/CSS and a small script. Email links open an email app; no message is sent or stored by the site. The Gmail plus tag is an incoming-mail category, not a new mailbox. Gmail labels and filters require separate account configuration.
 
-Acceptance: usable navigation and project filtering; readable project notes; working tagged and direct contact links; genuine portrait; no em dashes; no tracking or paid dependency; reduced-motion support; actual live release inspection. Preserve company code and existing account permissions.
+Design direction, 12 October 2026: an original single-page layout inspired by Rahul's supplied examples. A compact portrait introduction leads to experience, connected skills, alternating featured project stories, a larger expandable collection and contact. Preserve the approved nature banner and all twelve project entries. Include only evidenced work; do not invent testimonials or client logos.
+
+Acceptance: usable navigation and project filtering; readable project notes; working tagged and direct contact links; validated draft-only enquiry form; genuine portrait; no em dashes; no tracking or paid dependency; reduced-motion support; actual desktop/mobile and live release inspection. Preserve company code and existing account permissions.

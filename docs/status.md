@@ -1,6 +1,6 @@
 # Portfolio status
 
-11 October 2026. Owner: Codex.
+12 October 2026. Owner: Codex.
 
 ## Current hosting
 
@@ -10,15 +10,19 @@ The personal repository KaizenxRyu/KaizenxRyu.github.io owns the portfolio at ht
 
 Twelve anonymized actual-work entries: Kaizen-Ryu, identity operations, AI usage governance, packaging automation, virtual desktops, cost reporting, service reporting, directory discovery, enterprise AI assistance, agent integration, authentication diagnostics, and data security/Copilot readiness. Rejected public sample repositories are excluded. No customer names, internal endpoints, private source or outcome metrics are published.
 
-The refresh includes category filters, expandable project notes, per-project language or delivery labels, distinct concept illustrations, four expertise areas, a Microsoft certification background section, and a contact desk. Decorative motion has a pause control, system reduced-motion support and on-screen flow animation. The dark banner shows a developer at multiple screens overlooking Himalayan mountains and the Ganga. Portfolio enquiries use rahulchamoli.in+hello@gmail.com; direct contact is rahulchamoli.in@gmail.com. A Gmail filter has not been configured by this website.
+The single-page refresh has a compact portrait introduction, actual professional experience, connected capabilities, three alternating featured project stories and nine additional projects in an expandable collection. Category filters, readable project notes, language labels and original concept illustrations are retained. The identity section preserves the approved Himalayan mountains and Ganga banner. Certification history links to LinkedIn without asserting current validity. There are no invented endorsements or client-logo claims.
+
+Decorative motion has a pause control, system reduced-motion support and on-screen flow animation. The contact form prepares an encoded email draft; it sends and stores nothing. Empty required fields prevent draft creation; editing input clears a stale draft. Portfolio enquiries use rahulchamoli.in+hello@gmail.com; direct contact is rahulchamoli.in@gmail.com. A Gmail filter has not been configured by this website.
 
 ## Validation and limits
 
 Source checks passed for 12 entries, unique IDs, anchor targets, local asset files, no em dashes, no rejected example repositories, no customer names/internal endpoint domains, tagged and direct email links, and the canonical personal URL.
 
-Browser preview: all images loaded, no horizontal overflow at the observed desktop viewport, Security filter showed four matching projects and updated its pressed state, All projects restored twelve, project notes expanded, and Copy email reported success. Mail links contain the encoded plus tag. The desktop page was visually reviewed. Source-project tests were not rerun; no claim about their current production readiness is made.
+Browser preview on 12 October: desktop observed at 1407px and mobile at 390px. Introduction, project stories and contact layouts were visually inspected. A rotating portrait decoration initially caused mobile overflow; clipping its section fixed it. The 390px document width stayed within the viewport after navigation and project filtering. Security showed four matching projects and opened the additional collection; All restored twelve. Project notes expanded, Copy email reported success and Motion off paused animation. All image assets loaded after scrolling. No browser warning/error logs were observed.
 
-A requested 390px browser viewport override did not take effect: observed innerWidth remained 1407. Mobile CSS is present, but this release's actual mobile browser check is not completed. Record this limitation instead of claiming a mobile pass. The old-site redirect was verified in the browser. Final live release receipts are retained in the private release record outside this repository.
+Contact verification: an empty form did not create a draft. Valid preview input produced a mailto link with correctly encoded ampersand, plus and newline characters. Editing the brief hid the old draft. No email was sent. Source-project tests were not rerun; no claim about their current production readiness is made.
+
+This supersedes the previous release's uncompleted mobile check. Broader device coverage and an email-app send are not tested. Live publication verification is recorded privately after deployment; this source document describes the verified preview. Screenshots, task records and release receipts stay outside the public repository.
 
 ## Deployment and recovery
 
