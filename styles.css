@@ -92,3 +92,43 @@ body.page-hidden *,body.page-hidden *:before,body.page-hidden *:after{animation-
 
 .brief-form[hidden]{display:none}.portrait-halo:before{animation-play-state:paused}.hero.in-view .portrait-halo:before{animation-play-state:running}
 .card-visual{--blue:#8dbbff}.capability-band .system-core{stroke:#8dbbff}.identity-band em{color:#8dbbff}
+
+/* Section 03 is one integrated studio scene, not a framed social banner. */
+.identity-band{position:relative;isolation:isolate;overflow:clip;background:#11151d}
+.identity-band:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 76% 70%,#23457255,transparent 65%);pointer-events:none}
+.identity-section{grid-template-columns:1fr 1.6fr;gap:35px;padding-block:64px 32px}
+.identity-copy{position:relative;z-index:1;padding-bottom:28px}.identity-copy h2{font-size:clamp(34px,3.5vw,48px)}
+.studio-art{align-self:end;min-width:0;margin-right:-55px;overflow:visible}.studio-art svg{width:100%;height:auto}
+.studio-screens text{fill:#b3d0f8;font:8px var(--mono);letter-spacing:.8px}
+.studio-water,.screen-data{animation:flow 13s linear infinite;animation-play-state:paused}
+.identity-section.in-view .studio-water,.identity-section.in-view .screen-data{animation-play-state:running}
+.studio-sky{animation:studio-shimmer 9s ease-in-out infinite alternate;animation-play-state:paused}.identity-section.in-view .studio-sky{animation-play-state:running}
+@keyframes studio-shimmer{from{opacity:.4}to{opacity:1}}
+@media(max-width:1000px){.identity-section{gap:20px}.studio-art{margin-right:-24px}}
+@media(max-width:700px){.identity-section{grid-template-columns:1fr;gap:0;padding-block:48px 0}.identity-copy{padding-bottom:15px}.studio-art{margin-inline:-18px;max-width:calc(100% + 36px)}.identity-copy>p:not(.eyebrow){max-width:450px}}
+
+/* Official Microsoft Fluent icons are concept visuals, not partner badges. */
+.stack-strip li:before{display:none}.stack-strip li{gap:7px}.stack-strip img{flex:none}
+.experience h3{display:flex;align-items:center;gap:10px}.experience h3 img{flex:none}
+.credential-grid li>img{flex:none}.credential-number{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.contact-icon{margin:0 0 20px}.skill-caption text{fill:#b5cdec;font:9px var(--mono);text-anchor:middle;letter-spacing:.8px}
+.fluent-visual,.featured-case:nth-child(2) .fluent-visual,.featured-case:nth-child(3) .fluent-visual{background:transparent;box-shadow:none}
+.featured-case .fluent-visual{padding:16px 6px}.portfolio-grid .fluent-visual{padding:8px 6px}
+.fluent-diagram{max-height:300px!important}.diagram-orbit{fill:none;stroke:#c7d7ed;stroke-width:1;stroke-dasharray:2 8}
+.icon-disc{fill:#fff;stroke:#d7e3f3;stroke-width:1}.primary-disc{fill:#e7effb;stroke:#c1d5f3}
+.fluent-flow{fill:none;stroke:#7ca3db;stroke-width:1.2;stroke-dasharray:5 7;animation:flow 12s linear infinite;animation-play-state:paused}
+.project-card.in-view .fluent-flow{animation-play-state:running}.fluent-visual .illustration-note{color:#607898}
+.flow-dot{fill:#2864d9;animation:diagram-pulse 4s ease-in-out infinite;animation-play-state:paused}.secondary{animation-delay:-2s}
+.project-card.in-view .flow-dot{animation-play-state:running}@keyframes diagram-pulse{0%,100%{opacity:.2}50%{opacity:1}}
+.main-fluent{transition:transform .4s;transform-box:fill-box;transform-origin:center}.project-card:hover .main-fluent{transform:translateY(-3px)}
+.featured-case .fluent-visual,.portfolio-grid .fluent-visual{background:none;box-shadow:none;border-radius:0}
+.identity-band .identity-copy>p:not(.eyebrow){color:#b2c1d7}.studio-art{mask-image:linear-gradient(90deg,transparent,#000 7%,#000 94%,transparent)}
+.tech-tags li{border:0;padding:0;font-size:11px}.tech-tags{gap:12px}.tech-tags li+li:before{content:'·';margin-right:12px;color:#7c94b6}
+.filter{display:inline-flex;align-items:center;gap:6px}.filter img{flex:none}
+
+/* The navigation stays above every section while preserving its content width. */
+.masthead{position:sticky;top:0;z-index:30;background:#fffffffa;box-shadow:0 1px 0 #d5dce8}
+.skip{z-index:40}
+.studio-art{mask-image:none;margin-right:-30px}
+@media(max-width:700px){.studio-art{margin-inline:-12px;max-width:calc(100% + 24px)}}
+@media(max-width:700px){html{scroll-padding-top:140px}}
